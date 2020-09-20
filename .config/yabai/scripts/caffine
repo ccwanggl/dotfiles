@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# toggles on and off between caffeinate
+
+read -r state<~/Programs/bin/caffine.state
+
+if [ "$state" = "true" ]; then
+  caffeinate -disu &
+else
+  killall caffeinate
+fi
+
+~/Programs/bin/toggle_bool $state > ~/Programs/bin/caffine.state
+~/Programs/bin/toggle
