@@ -19,5 +19,6 @@ source $HOME/.config/nvim/plug-config/cpp.vim
 
 
 source $HOME/.config/nvim/plug-config/highlight.vim
+source $HOME/.config/nvim/plug-config/fzf.vim
 
 

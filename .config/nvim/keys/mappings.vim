@@ -34,10 +34,10 @@ vnoremap > >gv
 
 " Better window nav {{{
 
-nnoremap <c-h> <C-w>h
-nnoremap <c-l> <C-w>l
-nnoremap <c-j> <C-w>j
-nnoremap <c-k> <C-w>k
+nnoremap <leader>;a <C-w>h
+nnoremap <leader>;d <C-w>l
+nnoremap <leader>;s <C-w>j
+nnoremap <leader>;w <C-w>k
 
 nnoremap <leader>o o<ESC>^Da
 nnoremap <leader>0 0<ESC>^Da
