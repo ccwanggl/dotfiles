@@ -58,6 +58,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
 
 
+    Plug 'ianding1/leetcode.vim'
 
   call plug#end()
 
