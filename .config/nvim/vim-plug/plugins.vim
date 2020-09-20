@@ -54,7 +54,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " highlight
     Plug 'jackguo380/vim-lsp-cxx-highlight' 
 
-call plug#end()
+    Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
+    Plug 'junegunn/fzf.vim'
+
+
+
+  call plug#end()
 
 
 
