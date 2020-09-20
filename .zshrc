@@ -86,17 +86,17 @@ function cd {
 #source Prezto.
 source $ZSH/init.zsh
 
-#for fzf
+# for fzf
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 # add support for ctrl+o to open selected file in VS Code
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(vim {})+abort' --border"
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 
-
-#
 bindkey -e
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
 function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
 
 source /Users/guoliang/Library/Preferences/org.dystroy.broot/launcher/bash/br
