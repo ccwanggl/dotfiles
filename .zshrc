@@ -48,14 +48,14 @@ alias vscode="open -a Visual\ Studio\ Code"
 alias aria2rpc="aria2c --conf-path=/Users/guoliang/aria2.conf -D"
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
-# Set the path for golang development
+####################################################################################################
+#                               Set the path for golang development
+####################################################################################################
+export GOPATH=$HOME/workspace/.go
 
-export GOPATH=$HOME/workspace/golib
-export PATH=$PATH:$GOPATH/bin
-export GOPATH=$GOPATH:$HOME/workspace/gopher
-# export GOBIN=$HOME/workspace/gopher/bin
-
-# set the path for rust
+####################################################################################################
+#                                   set the path for rust
+####################################################################################################
 export PATH="$HOME/.cargo/bin:$PATH"
 
 alias ping='prettyping --nolegend'
@@ -69,10 +69,6 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 
-export PATH="/usr/local/opt/binutils/bin:$PATH"
-export PATH="$PATH:/Library/TeX/texbin"
-alias mycli="mycli -uroot -h 127.0.0.1"
-
 # set pipenv virtrual env dir location
 export PIPENV_VENV_IN_PROJECT=1
 # auto active the virtual env
@@ -82,6 +78,16 @@ function cd {
         pipenv shell
     fi
 }
+
+# For c++ dev
+export CPLUS_INCLUDE_PATH="/usr/local/opt/llvm/include/c++/v1:/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include"
+export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/lib"
+
+# For neovim ruby provider
+
+export PATH="$PATH:/Library/Ruby/Gems/2.6.0:/Users/guoliang/.gem/ruby/2.6.0:/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/gems/2.6.0"
+
+alias s="fortune |  cowsay -f dragon-and-cow | lolcat"
 
 #source Prezto.
 source $ZSH/init.zsh
@@ -103,7 +109,7 @@ function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
 
 source /Users/guoliang/Library/Preferences/org.dystroy.broot/launcher/bash/br
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$PATH:/usr/local/sbin"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
+#export PATH="/usr/local/bin/:$PATH:/usr/local/sbin"
+#export PATH="/usr/local/opt/llvm/bin:$PATH"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git    --work-tree=$HOME"
 alias ds=dotfiles

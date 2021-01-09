@@ -2,7 +2,7 @@
   "coc.preferences.extensionUpdateCheck":"daily",
   "suggest.noselect":true,
   "suggest.enablePreselect":false,
-  "coc.preferences.formatOnTypeFiletypes":["json"],
+  "coc.preferences.formatOnTypeFiletypes":["json", "markdown"],
 
   "suggest.completionItemKindLabels": {
 		"class": "\uf0e8",
@@ -32,6 +32,7 @@
 		"variable": "\ue71b"
 	},
 
+	
   "diagnostic.signOffset": 1,
 	"diagnostic.errorSign": "\uf467",
 	"diagnostic.warningSign": "\uf071",
@@ -72,10 +73,14 @@
 
                 "clang": {
                   "extraArgs":[
-                    "-isystem/usr/local/opt/llvm/bin/../include/c++/v1",
-                    "-isystem/usr/local/Cellar/llvm/10.0.1/lib/clang/10.0.1/include"
                   ]
                 },
+
+                "c++": {
+                  "extraArgs":[
+                  ]
+                },
+
                 "gcc": {
                   "extraArgs":[
                   ]

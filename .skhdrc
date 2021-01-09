@@ -1,23 +1,37 @@
+#!/usr/bin/env bash
+
+###########################################################################################
+###########################################################################################
+###########################################################################################
+
 # Message passing interface
 # command formart: yabai --message <category> <command>
 
-# opens kitty
+###########################################################################################
+###########################################################################################
+###########################################################################################
+
+
+# Open kitty
 # alt - return : "${HOME}"/.config/yabai/scripts/open_kitty.sh
 
-# opens alacritty
-alt - return : "${HOME}"/.config/yabai/scripts/open_alacritty.sh
+# Open alacritty (Use command + n)
+#alt - return : "${HOME}"/.config/yabai/scripts/open_alacritty.sh
 
-# opens iterm2
+# Open iterm2
 #alt - return : "${HOME}"/.config/yabai/scripts/open_iterm2.sh
 
-# Show system statistics
+
+# Show system statistics (Now use Uebersicht)
 #ctrl + lalt - 1 : "${HOME}"/.config/yabai/scripts/show_cpu.sh
 #ctrl + lalt - 2 : "${HOME}"/.config/yabai/scripts/show_mem.sh
 #ctrl + lalt - 3 : "${HOME}"/.config/yabai/scripts/show_bat.sh
 #ctrl + lalt - 4 : "${HOME}"/.config/yabai/scripts/show_disk.sh
 #ctrl + lalt - 5 : "${HOME}"/.config/yabai/scripts/show_song.sh
 
-# ====== Focus display(monitor) =========================
+###########################################################################################
+# ============================================== Focus display(monitor) =========================
+###########################################################################################
 
 # Focus display with arrangement index
 ctrl + shift + lalt - 1 : yabai -m display --focus 1
