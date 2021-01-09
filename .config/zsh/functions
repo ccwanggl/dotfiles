@@ -1,0 +1,9 @@
+se() { find ~/.config -type f -not -path '~/.config/.git/*'  | awk '{print $1}' | fzf | xargs  $EDITOR ; }
+
+# auto active the virtual env
+function cd {
+    builtin cd "$@"
+    if [ -f "Pipfile" ]; then
+        pipenv shell
+    fi
+}
