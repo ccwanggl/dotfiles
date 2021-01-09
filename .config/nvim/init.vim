@@ -49,4 +49,9 @@ source $HOME/.config/nvim/plug-config/leetcode.vim
 source $HOME/.config/nvim/plug-config/markdownpreview.vim
 
 
+"#################################################################################################### 
+"######################################## coc extersion configuration ###############################
+"#################################################################################################### 
+
+source $HOME/.config/nvim/plug-config/coc-explorer.vim
 

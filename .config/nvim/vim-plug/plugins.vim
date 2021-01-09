@@ -70,10 +70,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'kristijanhusak/defx-icons'
     Plug 'kristijanhusak/defx-git'
+    Plug 'mattn/vim-lsp-settings'
 
     " tags
     Plug 'liuchengxu/vista.vim'
     Plug 'prabirshrestha/vim-lsp'
+
 
     " golanguage
     Plug 'fatih/vim-go', {'tag':'*','for': 'go', 'do':':GoInstallBinaries'}
