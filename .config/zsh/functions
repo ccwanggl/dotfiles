@@ -7,3 +7,4 @@ function cd {
         pipenv shell
     fi
 }
+

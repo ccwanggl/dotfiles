@@ -31,8 +31,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "ranger
     Plug 'kevinhwang91/rnvimr' , {'do': 'make sync'}
 
-
-
     "Auto complate
     
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -92,6 +90,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'RishabhRD/popfix'
     Plug 'RishabhRD/nvim-cheat.sh'
 
+
+    Plug 'puremourning/vimspector'
 
 
     call plug#end()

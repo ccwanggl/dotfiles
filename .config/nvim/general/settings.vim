@@ -39,5 +39,22 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vim alternatively you can run :source $MYVIMRC
 
+" jump the right side of the brack -------------{{{
+">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+" 定义跳出括号函数，用于跳出括号
+inoremap <Enter> <C-R>=TabSkip()<CR>
+
+function! TabSkip()
+  let char = getline('.')[col('.') - 1]
+  if char == ')' || char == ']' || char == '』' || char == ';' || char == "'" || char == '"' || char == '*' || char == '>'
+      return "\<Right>"
+  else
+      return "\<Enter>"
+  endif
+endfunction
+
+"}}}
+
+
 " You can't stop me
 cmap w!! w !sudo tee %
