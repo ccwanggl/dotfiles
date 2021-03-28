@@ -1,5 +1,6 @@
 # Customize to your needs...
 source ~/.zplug/init.zsh
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 #source Prezto.
 source $ZSH/init.zsh
