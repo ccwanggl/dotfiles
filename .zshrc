@@ -1,6 +1,5 @@
 # Customize to your needs...
 source ~/.zplug/init.zsh
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 #source Prezto.
 source $ZSH/init.zsh
@@ -29,3 +28,6 @@ bindkey -e
 
 source /Users/guoliang/Library/Preferences/org.dystroy.broot/launcher/bash/br
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+prompt powerlevel10k
