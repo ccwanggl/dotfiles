@@ -10,10 +10,14 @@ command! -bang -nargs=* Rg
   \   fzf#vim#with_preview(), <bang>0)
 
 noremap <silent> <c-f> :Rg<CR>
-noremap <silent> <c-l> :Lines<CR>
 noremap <silent> <c-w> :Buffers<CR>
-noremap <silent> <c-h> :History<CR>
-noremap <silent> <c-s-h> :History:<CR>
+
+
+" confi with pane size adjust 
+
+"noremap <silent> <c-l> :Lines<CR>
+"noremap <silent> <c-h> :History<CR>
+"noremap <silent> <c-s-h> :History:<CR>
 
 
 command! -bang -nargs=* GGrep

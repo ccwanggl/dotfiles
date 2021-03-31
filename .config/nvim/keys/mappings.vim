@@ -6,20 +6,20 @@ inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
 " Use alt + hjkl to resise windows
-nnoremap <M-j> :resize -2<CR>
-nnoremap <M-k> :resize +2<CR>
-nnoremap <M-h> :vertical resize -2<CR>
-nnoremap <M-l> :vertical resize +2<CR>
+nnoremap <c-j> :resize -2<CR>
+nnoremap <c-k> :resize +2<CR>
+nnoremap <c-h> :vertical resize -2<CR>
+nnoremap <c-l> :vertical resize +2<CR>
 
 inoremap jk <ESC>
 
 " Easy CAPS
-inoremap <c-u> <ESC>viwUi
+inoremap <c-u> <ESC>viwUa
 nnoremap <c-u> viwU<ESC>
 
 
-nnoremap <Leader>le <ESC>0
-nnoremap <Leader>lb <ESC>$
+nnoremap <Leader>lb <ESC>0
+nnoremap <Leader>le <ESC>$
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
