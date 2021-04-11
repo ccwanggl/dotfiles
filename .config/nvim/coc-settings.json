@@ -52,41 +52,41 @@
   "snippets.ultisnips.directories":[
       "$HOME/.config/nvim/UlitiSnips/",
       "$HOME/.config/nvim/autoload/plugged/vim-snippets/UltiSnips/"
-  ]
+  ],
 
 
- // "languageserver": {
- //       "ccls": {
- //           "command": "ccls",
- //           "filetypes": ["c", "cpp", "objc", "objcpp"],
- //           "rootPatterns": [".ccls", 
- //             "compile_commands.json", 
- //             ".vim/", 
- //             ".git/", 
- //             ".hg/"],
+ "languageserver": {
+       "ccls": {
+           "command": "ccls",
+           "filetypes": ["c", "cpp", "objc", "objcpp"],
+           "rootPatterns": [".ccls", 
+             "compile_commands.json", 
+             ".vim/", 
+             ".git/", 
+             ".hg/"],
 
- //           "initializationOptions": {
- //               "cache": {
- //                   "directory": "/tmp/ccls"
- //               },
+           "initializationOptions": {
+               "cache": {
+                   "directory": "/tmp/ccls"
+               },
 
- //               "highlight": { "lsRanges" : true },
+               "highlight": { "lsRanges" : true },
 
- //               "clang": {
- //                 "extraArgs":[
- //                 ]
- //               },
+               "clang": {
+                 "extraArgs":[
+                 ]
+               },
 
- //               "c++": {
- //                 "extraArgs":[
- //                 ]
- //               },
+               "c++": {
+                 "extraArgs":[
+                 ]
+               },
 
- //               "gcc": {
- //                 "extraArgs":[
- //                 ]
- //               }
- //           }
- //       }
- //   }
+               "gcc": {
+                 "extraArgs":[
+                 ]
+               }
+           }
+       }
+   }
 }

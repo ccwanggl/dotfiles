@@ -55,17 +55,3 @@ source $HOME/.config/nvim/plug-config/markdownpreview.vim
 
 source $HOME/.config/nvim/plug-config/coc-explorer.vim
 
-lua << EOF
-require'lspconfig'.clangd.setup {    
-  on_attach = on_attach,    
-  default_config = {        
-    cmd = {            
-      "clangd", "--background-index", "--pch-storage=memory",            
-      "--clang-tidy", "--suggest-missing-includes"        
-    },        
-    filetypes = {"c", "cpp", "objc", "objcpp"},        
-    
-  }
-}
-
-EOF

@@ -16,6 +16,8 @@ zplug "g-plane/zsh-yarn-autocompletions"
 zplug "romkatv/powerlevel10k", as:theme, depth:1
 
 export fpath=( $HOME/.config/zsh "${fpath[@]}" )
+export PATH=$PATH:$HOME/.local/nvim-osx64/bin/
+export PATH="/usr/local/opt/llvm/bin":$PATH
 
 source $HOME/.config/zsh/functions
 source $HOME/.config/zsh/alias
