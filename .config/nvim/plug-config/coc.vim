@@ -56,10 +56,10 @@ nmap <silent> <Leader>= <Plug>(coc-diagnostic-next)
 
 
 " Goto code navigation
-nmap <silent> <Leader>gd <Plug>(coc-definition)
-nmap <silent> <Leader>gy <Plug>(coc-type-definition)
-nmap <silent> <Leader>gi <Plug>(coc-implementation)
-nmap <silent> <Leader>gr <Plug>(coc-reference)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-reference)
 
 nnoremap <silent> K :call <SID>show_documention() <CR>
 

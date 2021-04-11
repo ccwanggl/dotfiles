@@ -54,8 +54,8 @@
       "$HOME/.config/nvim/autoload/plugged/vim-snippets/UltiSnips/"
   ],
 
-
  "languageserver": {
+
        "ccls": {
            "command": "ccls",
            "filetypes": ["c", "cpp", "objc", "objcpp"],
@@ -70,23 +70,15 @@
                    "directory": "/tmp/ccls"
                },
 
-               "highlight": { "lsRanges" : true },
-
-               "clang": {
-                 "extraArgs":[
-                 ]
-               },
-
-               "c++": {
-                 "extraArgs":[
-                 ]
-               },
-
-               "gcc": {
-                 "extraArgs":[
-                 ]
-               }
+               "highlight": { "lsRanges" : true }
            }
-       }
+       },
+
+			"go": {
+				"command":"gopls",
+				"rootPatterns": ["go.mod"],
+				"trace.server": "verbose",
+				"filetypes": ["go"]
+			}
    }
 }

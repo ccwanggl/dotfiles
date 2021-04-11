@@ -16,6 +16,7 @@ zplug "g-plane/zsh-yarn-autocompletions"
 zplug "romkatv/powerlevel10k", as:theme, depth:1
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-history-substring-search"
+zplug "rupa/z"
 
 
 export fpath=( $HOME/.config/zsh "${fpath[@]}" )
@@ -44,4 +45,4 @@ if ! zplug check --verbose; then
   fi
 fi
 
-zplug load --verbose
+zplug load 
