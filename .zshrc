@@ -14,6 +14,9 @@ zplug "junegunn/fzf"
 zplug "Peltoche/lsd"
 zplug "g-plane/zsh-yarn-autocompletions"
 zplug "romkatv/powerlevel10k", as:theme, depth:1
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-history-substring-search"
+
 
 export fpath=( $HOME/.config/zsh "${fpath[@]}" )
 export PATH=$PATH:$HOME/.local/nvim-osx64/bin/
@@ -33,3 +36,12 @@ source /Users/guoliang/Library/Preferences/org.dystroy.broot/launcher/bash/br
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 prompt powerlevel10k
+
+if ! zplug check --verbose; then
+  printf "Install? [y|Y]: "
+  if read -q; then
+    echo; zplug install
+  fi
+fi
+
+zplug load --verbose
