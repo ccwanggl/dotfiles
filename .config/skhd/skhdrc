@@ -16,7 +16,7 @@
 # alt - return : "${HOME}"/.config/yabai/scripts/open_kitty.sh
 
 # Open alacritty (Use command + n)
-alt + shift + return : "${HOME}"/.config/yabai/scripts/open_alacritty.sh
+#alt + shift + return : "${HOME}"/.config/yabai/scripts/open_alacritty.sh
 
 # Open iterm2
 #alt - return : "${HOME}"/.config/yabai/scripts/open_iterm2.sh
