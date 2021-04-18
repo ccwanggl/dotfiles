@@ -111,13 +111,13 @@ lctrl + alt - 0 : yabai -m space --balance
 # Enable / Disable gaps in current workspace
 lctrl + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 
-# Rotate windows clockwise and anticlockwise
+# ========================= Rotate windows clockwise and anticlockwise =============================
 alt - r         : yabai -m space --rotate 90
 shift + alt - r : yabai -m space --rotate 270
 
-# Rotate on X and Y Axis
-shift + alt - x : yabai -m space --mirror x-axis
-shift + alt - y : yabai -m space --mirror y-axis
+# ==================================== Flip on X and Y Axis ========================================
+alt - x : yabai -m space --mirror x-axis
+alt - y : yabai -m space --mirror y-axis
 
 # Set insertion point for focused container
 #shift + lctrl + alt - h : yabai -m window --insert west
