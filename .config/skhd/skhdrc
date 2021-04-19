@@ -132,8 +132,7 @@ alt - y : yabai -m space --mirror y-axis
 shift + alt - space : yabai -m window --toggle float
 
 # Float and center window
-shift + alt - c : yabai -m window --toggle float;\
-                  yabai -m window --grid 4:4:1:1:2:2
+shift + alt - c : yabai -m window --toggle float; yabai -m window --grid 4:4:1:1:2:2
 
 # Make window native fullscreen
 alt - f         : yabai -m window --toggle zoom-fullscreen
