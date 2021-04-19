@@ -23,8 +23,8 @@ window:
   startup_mode: Windowed
 
 scrolling:
-  history: 10000
-  multiplier: 3
+  history: 10000 
+  multiplier: 3 
   scrolling_multiplier: 3
 
 # }}} window
@@ -33,7 +33,8 @@ scrolling:
 
 font:
   normal:
-    family: Hack Nerd Font
+    family: "MesloLGS NF"
+
     style: Regular
 
 
